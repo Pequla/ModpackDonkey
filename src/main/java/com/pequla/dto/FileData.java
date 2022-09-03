@@ -8,4 +8,13 @@ import lombok.Setter;
 @Getter
 @Setter
 public class FileData {
+
+    private int projectID;
+    private int fileID;
+    private boolean required;
+
+    @Override
+    public String toString() {
+        return this.projectID + ": " + this.fileID;
+    }
 }
